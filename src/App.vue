@@ -1,28 +1,36 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
-  </div>
+  <v-app>
+    <v-main>
+      <v-container>
+        <h1>BlueHose</h1>
+        <p><a href="https://firehose.guide/">Firehose</a>, but for UMich</p>
+        <v-row class="text-center">
+          <v-col cols="6">
+            <WeekView />
+          </v-col>
+          <v-col cols="6">
+            <ClassSelector />
+          </v-col>
+        </v-row>
+      </v-container>
+    </v-main>
+  </v-app>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import WeekView from "./components/WeekView";
+import ClassSelector from "./components/ClassSelector";
 
 export default {
   name: "App",
+
   components: {
-    HelloWorld
-  }
+    WeekView,
+    ClassSelector,
+  },
+
+  data: () => ({
+    //
+  }),
 };
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>

@@ -1,0 +1,78 @@
+Term,Session,AcadGroup,ClassNbr,Subject,CatalogNbr,Section,CourseTitle,Component,Codes,M,T,W,TH,F,S,SU,StartDate,EndDate,Time,Location,Instructor,Total,SeatsRemaining,HasWL,Units
+Fall 2020,Regular Academic Session,Architecture & Urban Planning,27076,Architecture (ARCH) Open Sections,202,2,Graphic Commun,LAB,P  ,,T,,TH,,,,08/31/2020,12/8/20,130-430PM,B100 MLB,,19,1,N,4
+Fall 2020,Regular Academic Session,Architecture & Urban Planning,30854,Architecture (ARCH) Open Sections,209,1,Special Topics Arch,LEC,P R,,T,,,,,,08/31/2020,12/8/20,830-1130AM,1360 A&AB,Trandafirescu,31,2,N,3.00-4.00
+Fall 2020,Regular Academic Session,Architecture & Urban Planning,34890,Architecture (ARCH) Open Sections,209,3,Special Topics Arch,LEC,P R,,T,,TH,,,,08/31/2020,12/10/20,1-230PM,1518 NUB,Zimmerman,15,2,Y,3.00-4.00
+Fall 2020,Regular Academic Session,Architecture & Urban Planning,21094,Architecture (ARCH) Open Sections,218,1,Visual Studies,LAB,P  ,,T,,TH,,,,08/31/2020,12/8/20,10-1PM,REMOTE,,19,3,N,5
+Fall 2020,Regular Academic Session,Architecture & Urban Planning,37224,Architecture (ARCH) Open Sections,302,1,SU Int Tran Studio,LAB,P R,M,,W,,F,,,08/31/2020,12/8/20,1-5PM,3100 A&AB,,15,3,N,6
+Fall 2020,Regular Academic Session,Architecture & Urban Planning,10945,Architecture (ARCH) Open Sections,312,1,Arch Design I,LAB,P R,M,,W,,F,,,08/31/2020,12/8/20,1-5PM,3100 A&AB,Trandafirescu,138,86,N,6
+Fall 2020,Regular Academic Session,Architecture & Urban Planning,39253,Architecture (ARCH) Open Sections,312,302,Arch Design I,LAB,P  ,M,,W,,F,,,08/31/2020,12/8/20,1-5PM,REMOTE,Harris,1,1,N,6
+Fall 2020,Regular Academic Session,Architecture & Urban Planning,39254,Architecture (ARCH) Open Sections,312,303,Arch Design I,LAB,P  ,,,,,,,,08/31/2020,12/8/20,ARR,REMOTE,,1,1,N,6
+Fall 2020,Regular Academic Session,Architecture & Urban Planning,39255,Architecture (ARCH) Open Sections,312,304,Arch Design I,LAB,P  ,,,,,,,,08/31/2020,12/8/20,ARR,REMOTE,,1,1,N,6
+Fall 2020,Regular Academic Session,Architecture & Urban Planning,39256,Architecture (ARCH) Open Sections,312,305,Arch Design I,LAB,P  ,,,,,,,,08/31/2020,12/8/20,ARR,REMOTE,,1,1,N,6
+Fall 2020,Regular Academic Session,Architecture & Urban Planning,17727,Architecture (ARCH) Open Sections,313,2,History Arch I,DIS,P R,,,,,F,,,08/31/2020,12/8/20,830-930AM,REMOTE,Zimmerman,25,1,N,3
+Fall 2020,Regular Academic Session,Architecture & Urban Planning,10950,Architecture (ARCH) Open Sections,313,3,History Arch I,DIS,P  ,,,,,F,,,08/31/2020,12/8/20,930-1030AM,REMOTE,Zimmerman,25,1,N,3
+Fall 2020,Regular Academic Session,Architecture & Urban Planning,10951,Architecture (ARCH) Open Sections,313,5,History Arch I,DIS,P R,,,,,F,,,08/31/2020,12/8/20,830-930AM,REMOTE,Zimmerman,25,13,N,3
+Fall 2020,Regular Academic Session,Architecture & Urban Planning,10952,Architecture (ARCH) Open Sections,313,6,History Arch I,DIS,P  ,,,,,F,,,08/31/2020,12/8/20,930-1030AM,REMOTE,Zimmerman,25,14,N,3
+Fall 2020,Regular Academic Session,Architecture & Urban Planning,10949,Architecture (ARCH) Open Sections,313,1,History Arch I,LEC,A  ,M,,W,,,,,08/31/2020,12/8/20,830-930AM,REMOTE,Zimmerman, , , ,3
+Fall 2020,Regular Academic Session,Architecture & Urban Planning,10954,Architecture (ARCH) Open Sections,314,2,Structures I,REC,P R,,,W,,,,,08/31/2020,12/8/20,930-1030AM,REMOTE,,175,89,N,3
+Fall 2020,Regular Academic Session,Architecture & Urban Planning,10953,Architecture (ARCH) Open Sections,314,1,Structures I,LEC,A  ,M,,,,F,,,08/31/2020,12/8/20,1030-1130AM,REMOTE,von Buelow, , , ,3
+Fall 2020,Regular Academic Session,Architecture & Urban Planning,10959,Architecture (ARCH) Open Sections,316,1,Design Fund I,LAB,P R,M,,W,,F,,,08/31/2020,12/8/20,930-1030AM,REMOTE,Roddier,130,70,N,3
+Fall 2020,Regular Academic Session,Architecture & Urban Planning,10961,Architecture (ARCH) Open Sections,317,1,Construction,LAB,P R,,T,,,,,,08/31/2020,12/8/20,1-3PM,REMOTE,Borum,175,86,N,3
+Fall 2020,Regular Academic Session,Architecture & Urban Planning,10961,Architecture (ARCH) Open Sections,317,1,Construction,LAB,P R,,T,,,,,,08/31/2020,12/8/20,3-6PM,REMOTE,,175,86,N,3
+Fall 2020,Regular Academic Session,Architecture & Urban Planning,25449,Architecture (ARCH) Open Sections,357,2,"Arch, Sustainability",DIS,P  ,,,W,,,,,08/31/2020,12/8/20,10-11AM,REMOTE,,25,8,Y,3
+Fall 2020,Regular Academic Session,Architecture & Urban Planning,25450,Architecture (ARCH) Open Sections,357,3,"Arch, Sustainability",DIS,P  ,,,W,,,,,08/31/2020,12/8/20,10-11AM,REMOTE,,25,16,Y,3
+Fall 2020,Regular Academic Session,Architecture & Urban Planning,25451,Architecture (ARCH) Open Sections,357,4,"Arch, Sustainability",DIS,P  ,,,W,,,,,08/31/2020,12/8/20,10-11AM,REMOTE,,25,22,Y,3
+Fall 2020,Regular Academic Session,Architecture & Urban Planning,25453,Architecture (ARCH) Open Sections,357,6,"Arch, Sustainability",DIS,P  ,,,W,,,,,08/31/2020,12/8/20,12-1PM,REMOTE,,25,10,Y,3
+Fall 2020,Regular Academic Session,Architecture & Urban Planning,25454,Architecture (ARCH) Open Sections,357,7,"Arch, Sustainability",DIS,P  ,,,W,,,,,08/31/2020,12/8/20,12-1PM,REMOTE,,25,13,Y,3
+Fall 2020,Regular Academic Session,Architecture & Urban Planning,25455,Architecture (ARCH) Open Sections,357,8,"Arch, Sustainability",DIS,P  ,,,W,,,,,08/31/2020,12/8/20,1-2PM,REMOTE,,25,9,Y,3
+Fall 2020,Regular Academic Session,Architecture & Urban Planning,25456,Architecture (ARCH) Open Sections,357,9,"Arch, Sustainability",DIS,P  ,,,W,,,,,08/31/2020,12/8/20,1-2PM,REMOTE,,25,22,Y,3
+Fall 2020,Regular Academic Session,Architecture & Urban Planning,25457,Architecture (ARCH) Open Sections,357,10,"Arch, Sustainability",DIS,P  ,,,W,,,,,08/31/2020,12/8/20,1-2PM,REMOTE,,25,20,Y,3
+Fall 2020,Regular Academic Session,Architecture & Urban Planning,25448,Architecture (ARCH) Open Sections,357,1,"Arch, Sustainability",LEC,A  ,,T,,TH,,,,08/31/2020,12/8/20,9-10AM,REMOTE,, , , ,3
+Fall 2020,Regular Academic Session,Architecture & Urban Planning,25380,Architecture (ARCH) Open Sections,409,3,Special Topics Arch,LEC,P R,,T,,,,,,08/31/2020,12/8/20,1-4PM,2213 A&AB,Ahlquist,15,4,Y,1.00-3.00
+Fall 2020,Regular Academic Session,Architecture & Urban Planning,31543,Architecture (ARCH) Open Sections,409,306,Special Topics Arch,LEC,P R,,,,TH,,,,08/31/2020,12/10/20,1-4AM,REMOTE,Gilpin,12,12,N,1.00-3.00
+Fall 2020,Regular Academic Session,Architecture & Urban Planning,35504,Architecture (ARCH) Open Sections,411,1,Becoming Digital,SEM,P  ,,,,TH,,,,08/31/2020,12/8/20,830-1130AM,REMOTE,Abrons,50,24,Y,3
+Fall 2020,Regular Academic Session,Architecture & Urban Planning,16543,Architecture (ARCH) Open Sections,412,1,Arch Design I,LAB,P R,M,,W,,F,,,08/31/2020,12/8/20,1-5PM,3100 A&AB,Fure,45,19,N,6
+Fall 2020,Regular Academic Session,Architecture & Urban Planning,17427,Architecture (ARCH) Open Sections,413,1,History,LEC,P R,,T,,TH,,,,08/31/2020,12/8/20,10-1130AM,REMOTE,Knoblauch,45,18,N,3
+Fall 2020,Regular Academic Session,Architecture & Urban Planning,22639,Architecture (ARCH) Open Sections,417,1,Construction,LAB,P R,,T,,,,,,08/31/2020,12/8/20,3-6PM,REMOTE,,175,86,N,3
+Fall 2020,Regular Academic Session,Architecture & Urban Planning,22639,Architecture (ARCH) Open Sections,417,1,Construction,LAB,P R,,T,,,,,,08/31/2020,12/8/20,1-3PM,REMOTE,Borum,175,86,N,3
+Fall 2020,Regular Academic Session,Architecture & Urban Planning,10968,Architecture (ARCH) Open Sections,423,3,Int U P&Env,DIS,P  ,,,,,F,,,08/31/2020,12/8/20,11-12PM,REMOTE,,25,5,Y,3
+Fall 2020,Regular Academic Session,Architecture & Urban Planning,10966,Architecture (ARCH) Open Sections,423,1,Int U P&Env,LEC,A  ,,T,,TH,,,,08/31/2020,12/8/20,10-11AM,REMOTE,D'Anieri, , , ,3
+Fall 2020,Regular Academic Session,Architecture & Urban Planning,10970,Architecture (ARCH) Open Sections,432,1,Arch Des III,LAB,P R,M,,W,,F,,,08/31/2020,12/8/20,1-5PM,3100 A&AB,Unverzagt,150,93,N,6
+Fall 2020,Regular Academic Session,Architecture & Urban Planning,39512,Architecture (ARCH) Open Sections,432,304,Arch Des III,LAB,P  ,M,,W,,F,,,08/31/2020,12/8/20,1-5PM,REMOTE,,1,1,N,6
+Fall 2020,Regular Academic Session,Architecture & Urban Planning,39513,Architecture (ARCH) Open Sections,432,305,Arch Des III,LAB,P  ,M,,W,,F,,,08/31/2020,12/8/20,1-5PM,REMOTE,,1,1,N,6
+Fall 2020,Regular Academic Session,Architecture & Urban Planning,20339,Architecture (ARCH) Open Sections,466,1,Dimensions,LEC,PI ,M,,,,,,,08/31/2020,12/8/20,7-9PM,REMOTE,Unverzagt,25,25,N,1
+Fall 2020,Regular Academic Session,Architecture & Urban Planning,31000,Architecture (ARCH) Open Sections,505,2,Spec Topics Env Tech,LEC,P  ,,,W,,,,,08/31/2020,12/8/20,1-4PM,2213 A&AB,Junghans,10,8,Y,3
+Fall 2020,Regular Academic Session,Architecture & Urban Planning,39514,Architecture (ARCH) Open Sections,505,302,Spec Topics Env Tech,LEC,P  ,,,W,,,,,08/31/2020,12/8/20,1-4PM,REMOTE,Junghans,10,10,N,3
+Fall 2020,Regular Academic Session,Architecture & Urban Planning,20393,Architecture (ARCH) Open Sections,506,2,Spec Topics Des Fund,SEM,P  ,,T,,,,,,08/31/2020,12/8/20,1-4PM,REMOTE,Groat,12,8,Y,3
+Fall 2020,Regular Academic Session,Architecture & Urban Planning,23791,Architecture (ARCH) Open Sections,509,4,Experimental Course,SEM,P  ,M,,,,,,,08/31/2020,12/8/20,830-1130AM,REMOTE,Fure,15,2,Y,3
+Fall 2020,Regular Academic Session,Architecture & Urban Planning,28134,Architecture (ARCH) Open Sections,509,6,Experimental Course,SEM,P  ,,,W,,,,,08/31/2020,12/8/20,830-1130AM,REMOTE,Haar,12,1,Y,3
+Fall 2020,Regular Academic Session,Architecture & Urban Planning,23792,Architecture (ARCH) Open Sections,509,8,Experimental Course,SEM,P  ,,,,,F,,,08/31/2020,12/8/20,830-1130AM,REMOTE,Morcillo Pallares,20,10,Y,3
+Fall 2020,Regular Academic Session,Architecture & Urban Planning,31213,Architecture (ARCH) Open Sections,509,14,Experimental Course,SEM,P  ,M,,,,,,,08/31/2020,12/8/20,830-1130AM,REMOTE,del Campo,20,10,Y,3
+Fall 2020,Regular Academic Session,Architecture & Urban Planning,39260,Architecture (ARCH) Open Sections,509,315,Experimental Course,SEM,P  ,,,W,,,,,08/31/2020,12/8/20,830-1130AM,REMOTE,Ng,10,9,N,3
+Fall 2020,Regular Academic Session,Architecture & Urban Planning,33371,Architecture (ARCH) Open Sections,509,16,Experimental Course,SEM,P  ,,T,,,,,,08/31/2020,12/8/20,830-1130AM,REMOTE,Aguirre,20,9,Y,3
+Fall 2020,Regular Academic Session,Architecture & Urban Planning,24763,Architecture (ARCH) Open Sections,515,2,Sustainable Systems,DIS,P R,,,,,F,,,08/31/2020,12/8/20,1030-1130AM,REMOTE,,140,44,N,3
+Fall 2020,Regular Academic Session,Architecture & Urban Planning,24762,Architecture (ARCH) Open Sections,515,1,Sustainable Systems,LEC,A  ,,,,,F,,,08/31/2020,12/8/20,830-1030AM,REMOTE,, , , ,3
+Fall 2020,Regular Academic Session,Architecture & Urban Planning,17398,Architecture (ARCH) Open Sections,516,2,Arch Representation,LAB,P R,,,W,,,,,08/31/2020,12/8/20,2-430PM,REMOTE,"Moran, Griffiths",62,1,N,3
+Fall 2020,Regular Academic Session,Architecture & Urban Planning,17397,Architecture (ARCH) Open Sections,516,1,Arch Representation,LEC,A  ,,,W,,,,,08/31/2020,12/8/20,1-2PM,REMOTE,"Moran, Griffiths", , , ,3
+Fall 2020,Regular Academic Session,Architecture & Urban Planning,20245,Architecture (ARCH) Open Sections,523,1,Hist Urban Form,LEC,P  ,,T,,TH,,,,08/31/2020,12/8/20,830-10AM,REMOTE,Fishman,45,21,Y,3
+Fall 2020,Regular Academic Session,Architecture & Urban Planning,25537,Architecture (ARCH) Open Sections,527,1,Integrative Systems,LEC,P R,,,,TH,,,,08/31/2020,12/8/20,830-1130AM,REMOTE,"Kennedy, von Buelow, Junghans",180,54,N,3
+Fall 2020,Regular Academic Session,Architecture & Urban Planning,24779,Architecture (ARCH) Open Sections,537,1,Fabrication,SEM,P R,,,W,,,,,08/31/2020,12/10/20,2-5PM,2222 A&AB,"Mankouche, Aghaei Meibodi",62,34,N,3
+Fall 2020,Regular Academic Session,Architecture & Urban Planning,10974,Architecture (ARCH) Open Sections,552,1,Arch Design V,LAB,P R,M,,,TH,,,,08/31/2020,12/8/20,1-6PM,3100 A&AB,McMorrough,185,91,N,6
+Fall 2020,Regular Academic Session,Architecture & Urban Planning,37294,Architecture (ARCH) Open Sections,555,1,Bld Sy&Ener Consvtn,LEC,P  ,,,W,,,,,08/31/2020,12/8/20,830-1130AM,2222 A&AB,Navvab,6,3,Y,3
+Fall 2020,Regular Academic Session,Architecture & Urban Planning,39520,Architecture (ARCH) Open Sections,555,301,Bld Sy&Ener Consvtn,LEC,P  ,,,W,,,,,08/31/2020,12/8/20,830-1130AM,REMOTE,Navvab,6,6,N,3
+Fall 2020,Regular Academic Session,Architecture & Urban Planning,37295,Architecture (ARCH) Open Sections,565,1,Res Environ Tech,LEC,P  ,M,,,,,,,08/31/2020,12/8/20,830-1130AM,2210 A&AB,Navvab,6,5,Y,3
+Fall 2020,Regular Academic Session,Architecture & Urban Planning,39521,Architecture (ARCH) Open Sections,565,301,Res Environ Tech,LEC,P  ,M,,,,,,,08/31/2020,12/8/20,830-1130AM,REMOTE,Navvab,6,5,N,3
+Fall 2020,Regular Academic Session,Architecture & Urban Planning,37292,Architecture (ARCH) Open Sections,582,1,Alternative Practice,SEM,P  ,,,W,,,,,08/31/2020,12/8/20,630-930PM,REMOTE,Groat,15,5,Y,3
+Fall 2020,Regular Academic Session,Architecture & Urban Planning,21838,Architecture (ARCH) Open Sections,609,1,Disability Studies,SEM,PI ,M,,,,,,,08/31/2020,12/10/20,1-4PM,G463 MH,Kupetz,14,10,Y,1.00-3.00
+Fall 2020,Regular Academic Session,Architecture & Urban Planning,10982,Architecture (ARCH) Open Sections,660,1,Thesis Res&Dev Sem,SEM,P R,,,,,F,,,08/31/2020,12/8/20,1-4PM,ARR,Penarroyo,180,54,N,3
+Fall 2020,Regular Academic Session,Architecture & Urban Planning,10983,Architecture (ARCH) Open Sections,672,1,Arch Design VII,LAB,P R,M,,,TH,,,,08/31/2020,12/8/20,1-6PM,3100 A&AB,Graebner,180,54,N,6
+Fall 2020,Regular Academic Session,Architecture & Urban Planning,39790,Architecture (ARCH) Open Sections,690,106,Arc Curr Pract Exper,IND, I ,,,,,,,,08/31/2020,12/8/20,ARR,ARR,Clutter,25,24,N,1
+Fall 2020,Regular Academic Session,Architecture & Urban Planning,37230,Architecture (ARCH) Open Sections,700,1,MS Practicum,SEM,P R,M,,,TH,,,,08/31/2020,12/8/20,1-6PM,ARR,"Newell, Meier",15,6,N,6
+Fall 2020,Regular Academic Session,Architecture & Urban Planning,24752,Architecture (ARCH) Open Sections,701,1,Theories in Dig Tech,SEM,P R,,,W,,,,,08/31/2020,12/8/20,830-1130AM,REMOTE,Velikov,15,4,N,3
+Fall 2020,Regular Academic Session,Architecture & Urban Planning,39289,Architecture (ARCH) Open Sections,709,1,Special Topics - DMT,SEM,PDR,,T,,,,,,08/31/2020,12/8/20,830-1130AM,2213 A&AB,Adel,10,1,N,3
+Fall 2020,Regular Academic Session,Architecture & Urban Planning,37231,Architecture (ARCH) Open Sections,714,1,MS Proseminar,SEM,P R,,,,TH,,,,08/31/2020,12/8/20,830-1130AM,REMOTE,Nanda,15,6,N,3
+Fall 2020,Regular Academic Session,Architecture & Urban Planning,23794,Architecture (ARCH) Open Sections,801,1,Collo Ethics Doc Res,SEM,P  ,M,,,,,,,08/31/2020,12/8/20,4-6PM,REMOTE,Fishman,10,5,N,1
+Fall 2020,Regular Academic Session,Architecture & Urban Planning,28835,Architecture (ARCH) Open Sections,823,3,Sem Arch Hist&Thry,SEM,P  ,,T,,,,,,08/31/2020,12/10/20,1-4PM,ARR,Fishman,2,2,N,3
+Fall 2020,Regular Academic Session,Architecture & Urban Planning,31348,Architecture (ARCH) Open Sections,825,1,Sem Bldg Technology,SEM,P  ,M,,,,,,,08/31/2020,12/10/20,1-4PM,2210 A&AB,,2,1,N,3
+Fall 2020,Regular Academic Session,Architecture & Urban Planning,37558,Architecture (ARCH) Open Sections,839,33,Research Practicum,IND, I ,,,,,,,,08/31/2020,12/10/20,ARR,ARR,von Buelow,25,24,N,1.00-4.00
+Fall 2020,Regular Academic Session,Architecture & Urban Planning,10993,Architecture (ARCH) Open Sections,993,1,Teach Meth Gsi,SEM,P  ,,,,,,,,08/31/2020,12/10/20,ARR,ARR,"Clutter, Grengs",35,35,N,1
