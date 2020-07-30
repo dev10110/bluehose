@@ -3,7 +3,7 @@
     <v-card> </v-card>
     <v-card>
       <v-card-title>
-        <v-spacer></v-spacer>
+        <!-- <v-spacer></v-spacer> -->
         <v-text-field
           v-model="search"
           append-icon="mdi-magnify"
@@ -27,6 +27,19 @@
               multiple
             ></v-autocomplete>
           </v-col>
+        </v-row>
+
+        <v-row justify="space-around" align="center">
+          <v-checkbox
+            v-model="hideRemote"
+            class="mx-2"
+            label="Hide Remote Classes"
+          ></v-checkbox>
+          <v-checkbox
+            v-model="hideInPerson"
+            class="mx-2"
+            label="Hide In Person Classes"
+          ></v-checkbox>
         </v-row>
       </v-container>
 
@@ -90,7 +103,15 @@ export default {
     filtData() {
       let vm = this;
       return this.dataTable.filter(function(item) {
-        return vm.selectedAcadGrous.includes(item.AcadGroup);
+        let cond = true;
+        if (vm.hideRemote) {
+          cond = cond && item.Location !== "REMOTE";
+        }
+        if (vm.hideInPerson) {
+          cond = cond && item.Location === "REMOTE";
+        }
+
+        return cond && vm.selectedAcadGrous.includes(item.AcadGroup);
       });
     },
   },
@@ -98,13 +119,16 @@ export default {
   methods: {
     handleClickRow: function(event) {
       console.log(event);
-      this.selectedClass = event;
+      this.$emit("changeSelectedClass", event);
     },
   },
 
   data() {
     return {
       selectedAcadGrous: ["Engineering"],
+
+      hideRemote: false,
+      hideInPerson: true,
 
       selectedClass: null,
 
@@ -116,7 +140,7 @@ export default {
 
       headers: [
         { text: "Class Number", value: "ClassNbr", align: "center" },
-        { text: "Catalog Number", value: "CatalogNbr" },
+        { text: "Catalog Number", value: "CatalogNbr", align: "center" },
         {
           text: "Course Title",
           align: "start",

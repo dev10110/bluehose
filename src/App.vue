@@ -4,14 +4,14 @@
       <v-container>
         <h1>BlueHose</h1>
         <p><a href="https://firehose.guide/">Firehose</a>, but for UMich</p>
-        <v-row class="text-center">
-          <v-col cols="6">
+        <v-layout row class="text-center">
+          <v-flex md6>
             <WeekView />
-          </v-col>
-          <v-col cols="6">
+          </v-flex>
+          <v-flex md6>
             <ClassSelector />
-          </v-col>
-        </v-row>
+          </v-flex>
+        </v-layout>
       </v-container>
     </v-main>
   </v-app>
