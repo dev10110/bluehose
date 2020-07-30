@@ -12,7 +12,7 @@
       <div class="pa-md-4 ma-4">
         <v-layout row class="text-center">
           <v-flex md6>
-            <WeekView />
+            <WeekView v-bind:classesInSchedule="classesInSchedule" />
           </v-flex>
           <v-flex md6>
             <ClassSelector

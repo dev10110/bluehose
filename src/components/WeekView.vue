@@ -26,9 +26,13 @@
         :weekdays="weekday"
         :type="type"
         :events="events"
+        :key="classesInSchedule.length"
         :event-overlap-mode="mode"
         :event-overlap-threshold="30"
         :event-color="getEventColor"
+        :first-interval="6"
+        :interval-minutes="60"
+        :interval-count="17"
         @change="getEvents"
       ></v-calendar>
       <!-- </v-sheet> -->
@@ -40,8 +44,12 @@
 export default {
   name: "WeekView",
 
+  props: ["classesInSchedule"],
+
   data: () => ({
     type: "week",
+    start: 0,
+    end: 0,
 
     mode: "stack",
     weekday: [0, 1, 2, 3, 4, 5, 6],
@@ -73,28 +81,75 @@ export default {
       "Party",
     ],
   }),
+
   methods: {
+    extractTime(timeStr, date) {
+      // timestr is the string to apply it to, and date is the date object that i need to modify
+      console.log(timeStr);
+
+      return date;
+    },
+
     getEvents({ start, end }) {
       const events = [];
+      end;
+      this.start = start;
+      this.end = end;
+
+      console.log("Calendar getEvents ");
 
       const min = new Date(`${start.date}T00:00:00`);
-      const max = new Date(`${end.date}T23:59:59`);
+      // const max = new Date(`${end.date}T23:59:59`);
 
-      console.log(min.getDay());
+      this.classesInSchedule.forEach((classItem) => {
+        // determine which days the class is running:
+        let days = [];
 
-      // get next Monday
+        if (classItem.M === "M") {
+          days.push(1);
+        }
+        if (classItem.T === "T") {
+          days.push(2);
+        }
+        if (classItem.W === "W") {
+          days.push(3);
+        }
+        if (classItem.TH === "TH") {
+          days.push(4);
+        }
+        if (classItem.F === "F") {
+          days.push(5);
+        }
+        if (classItem.S === "S") {
+          days.push(6);
+        }
+        if (classItem.SU === "SU") {
+          days.push(0);
+        }
 
-      const startTime = (max.getTime() + min.getTime()) / 2;
-      const endTime = startTime + 1 * 3600 * 1000;
-      const event = {
-        name: "TEST EVENT",
-        start: new Date(startTime),
-        end: new Date(endTime),
-        timed: true,
-        color: this.colors[0],
-      };
+        console.log(classItem.CourseTitle, days);
 
-      events.push(event);
+        // for each day create an event
+        days.forEach((day) => {
+          const startTime = new Date(min.getTime());
+
+          // set to the right day
+          startTime.setDate(startTime.getDate() + day - startTime.getDay());
+
+          startTime.setHours(9);
+
+          const endTime = new Date(startTime.getTime() + 1 * 3600 * 1000);
+          const event = {
+            name: "TEST EVENT",
+            start: startTime,
+            end: endTime,
+            timed: true,
+            color: this.colors[0],
+          };
+
+          events.push(event);
+        });
+      });
 
       this.events = events;
     },
