@@ -3,6 +3,10 @@
     <v-card>
       <v-card-title>
         {{ selectedClass.CatalogNbr }} - {{ selectedClass.CourseTitle }}
+        <v-spacer></v-spacer>
+        <v-btn icon v-on:click="handleCloseCard"
+          ><v-icon>mdi-close</v-icon></v-btn
+        >
       </v-card-title>
 
       <v-card-text align="start">
@@ -149,8 +153,24 @@
             </v-list-item-content>
           </v-list-item>
         </div>
+        <div class="my-2">
+          <v-btn
+            color="primary"
+            v-if="!classesInSchedule.includes(selectedClass)"
+            v-on:click="handleAddtoSchedule"
+          >
+            Add to Schedule
+          </v-btn>
+          <v-btn
+            v-if="classesInSchedule.includes(selectedClass)"
+            v-on:click="handleRemoveFromSchedule"
+          >
+            Remove from Schedule
+          </v-btn>
+        </div>
       </v-card-text>
-      {{ selectedClass }}
+
+      <!-- {{ selectedClass }} -->
     </v-card>
   </div>
 </template>
@@ -159,6 +179,22 @@
 export default {
   name: "ClassDetails",
 
-  props: ["selectedClass"],
+  props: ["selectedClass", "classesInSchedule"],
+
+  methods: {
+    handleAddtoSchedule: function(event) {
+      console.log("Adding to schedule", event);
+      this.$emit("addToScheduleRequest", event);
+    },
+
+    handleCloseCard: function(event) {
+      console.log("Closing Section", event);
+      this.$emit("closeDetailedSection", event);
+    },
+    handleRemoveFromSchedule: function(event) {
+      console.log("Removing from selection");
+      this.$emit("removeFromScheduleRequest", event);
+    },
+  },
 };
 </script>

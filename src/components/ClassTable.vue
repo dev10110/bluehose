@@ -66,30 +66,8 @@
 //import vuePapaParse from "vue-papa-parse";
 
 import dataTable from "../data/FA2020_open.json";
-const uniqueAcadGroups = [
-  "Architecture & Urban Planning",
-  "Dental Hygiene",
-  "Dentistry",
-  "Education",
-  "Engineering",
-  "Environment and Sustainability",
-  "Information",
-  "Kinesiology",
-  "LSA Residential College",
-  "Law",
-  "Literature, Sci, and the Arts",
-  "Medicine",
-  "Music, Theatre & Dance",
-  "Nursing",
-  "Officer Education Programs",
-  "Pharmacy",
-  "Public Health",
-  "Public Policy",
-  "Rackham",
-  "Ross School of Business",
-  "Social Work",
-  "Stamps School of Art & Design",
-];
+
+const uniqueAcadGroups = [...new Set(dataTable.map((obj) => obj.AcadGroup))];
 
 export default {
   name: "ClassTable",
