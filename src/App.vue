@@ -115,9 +115,13 @@ export default {
 </script>
 
 <style scoped>
-.navBar {
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab");
+
+.navBar,
+.botBar {
   background-color: #01274d;
   color: #ffcb09;
+  font-family: "Roboto Slab", "Roboto", "Helvetica Neue" !important;
 }
 .navBar a:link,
 a:visited,
@@ -127,7 +131,6 @@ a:active {
 }
 
 .botBar {
-  background-color: #01274d;
   color: #fff;
 }
 .botBar a:link,

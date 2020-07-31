@@ -7,6 +7,9 @@ If you have any suggestions, features or bugs, _please_ let me know by raising a
 
 devansh@umich.edu
 
+Deployed on Netlify
+[![Netlify Status](https://api.netlify.com/api/v1/badges/72de7171-2f59-465f-85e4-dd490ccd65bc/deploy-status)](https://app.netlify.com/sites/bluehose/deploys)
+
 ## Project setup
 
 ```
