@@ -15,8 +15,16 @@
       <div class="pa-md-4 ma-4">
         <v-layout row class="text-center">
           <v-flex md6>
-            <WeekView v-bind:classesInSchedule="classesInSchedule" />
-            <SelectedClasses v-bind:classesInSchedule="classesInSchedule" />
+            <WeekView
+              v-bind:classesInSchedule="classesInSchedule"
+              v-bind:colors="colors"
+              v-on:selectedClass="handleChangeSelectedClass($event)"
+            />
+            <SelectedClasses
+              v-bind:classesInSchedule="classesInSchedule"
+              v-bind:colors="colors"
+              v-on:selectedClass="handleChangeSelectedClass($event)"
+            />
           </v-flex>
           <v-flex md6>
             <ClassSelector
@@ -24,7 +32,9 @@
               v-on:removeFromScheduleRequest="
                 handleRemoveFromScheduleRequest($event)
               "
+              v-on:changeSelectedClass="handleChangeSelectedClass($event)"
               v-bind:classesInSchedule="classesInSchedule"
+              v-bind:selectedClass="selectedClass"
             />
           </v-flex>
         </v-layout>
@@ -32,16 +42,25 @@
       </div>
       <div class="botBar">
         <v-container>
-          <p>
-            Devansh Agrawal - 2020 -
-            <a target="_blank" href="https://github.com/dev10110/bluehose">
-              Github
-            </a>
-            -
-            <a target="_blank" href="https://github.com/dev10110/bluehose">
-              Bugs/Feature Request
-            </a>
-          </p>
+          <v-row>
+            <v-col>
+              Devansh Agrawal
+            </v-col>
+
+            <v-col>
+              <a target="_blank" href="https://github.com/dev10110/bluehose">
+                Github
+              </a>
+            </v-col>
+            <v-col>
+              <a target="_blank" href="https://github.com/dev10110/bluehose">
+                Bugs/Feature Request
+              </a>
+            </v-col>
+            <v-col>
+              Last Updated: 31 July 2020
+            </v-col>
+          </v-row>
         </v-container>
       </div>
     </v-main>
@@ -64,6 +83,16 @@ export default {
 
   data: () => ({
     classesInSchedule: [],
+    selectedClass: null,
+    colors: [
+      "blue",
+      "indigo",
+      "deep-purple",
+      "cyan",
+      "green",
+      "orange",
+      "grey darken-1",
+    ],
   }),
 
   methods: {
@@ -76,6 +105,10 @@ export default {
       this.classesInSchedule = this.classesInSchedule.filter(function(obj) {
         return obj !== classObj;
       });
+    },
+
+    handleChangeSelectedClass: function(event) {
+      this.selectedClass = event;
     },
   },
 };

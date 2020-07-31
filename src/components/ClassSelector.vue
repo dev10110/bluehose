@@ -19,7 +19,7 @@ import ClassDetails from "./ClassDetails";
 export default {
   name: "ClassSelector",
 
-  props: ["classesInSchedule"],
+  props: ["classesInSchedule", "selectedClass"],
 
   components: {
     ClassTable,
@@ -27,19 +27,17 @@ export default {
   },
 
   data() {
-    return {
-      selectedClass: null,
-    };
+    return {};
   },
 
   methods: {
     handleChangeSelectedClass: function(selectedClass) {
-      this.selectedClass = selectedClass;
+      this.$emit("changeSelectedClass", selectedClass);
     },
     handleCloseDetailedSection: function(event) {
       event;
       console.log("request to close section");
-      this.selectedClass = null;
+      this.$emit("changeSelectedClass", null);
     },
     handleAddToScheduleRequest: function(event) {
       event;

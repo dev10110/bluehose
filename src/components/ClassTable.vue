@@ -41,6 +41,8 @@
             label="Hide In Person Classes"
           ></v-checkbox>
         </v-row>
+
+        <p class="text--disabled">Filter by "Fits Schedule" coming soon</p>
       </v-container>
 
       <v-data-table
@@ -109,12 +111,12 @@ export default {
       console.log(event);
       this.$emit("changeSelectedClass", event);
 
-      const filtA = this.dataTable.filter(function(item) {
-        return item.SubjectCatalog == event.SubjectCatalog;
-      });
-      if (filtA.length > 1) {
-        this.search = event.SubjectCatalog;
-      }
+      // const filtA = this.dataTable.filter(function(item) {
+      //   return item.SubjectCatalog == event.SubjectCatalog;
+      // });
+      // if (filtA.length > 1) {
+      //   this.search = event.SubjectCatalog;
+      // }
     },
   },
 

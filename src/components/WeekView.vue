@@ -34,6 +34,7 @@
         :interval-minutes="60"
         :interval-count="17"
         @change="getEvents"
+        @click:event="handleSelectEvent"
       ></v-calendar>
       <!-- </v-sheet> -->
     </v-container>
@@ -44,7 +45,7 @@
 export default {
   name: "WeekView",
 
-  props: ["classesInSchedule"],
+  props: ["classesInSchedule", "colors"],
 
   data: () => ({
     type: "week",
@@ -61,25 +62,6 @@ export default {
     ],
     value: "",
     events: [],
-    colors: [
-      "blue",
-      "indigo",
-      "deep-purple",
-      "cyan",
-      "green",
-      "orange",
-      "grey darken-1",
-    ],
-    names: [
-      "Meeting",
-      "Holiday",
-      "PTO",
-      "Travel",
-      "Event",
-      "Birthday",
-      "Conference",
-      "Party",
-    ],
   }),
 
   methods: {
@@ -201,6 +183,16 @@ export default {
     },
     getEventColor(event) {
       return event.color;
+    },
+
+    handleSelectEvent(event) {
+      console.log("Clicked on", event.event.name);
+
+      this.classesInSchedule.forEach((classItem) => {
+        if (classItem.SubjectCatalog === event.event.name) {
+          this.$emit("selectedClass", classItem);
+        }
+      });
     },
   },
 };
