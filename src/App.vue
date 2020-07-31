@@ -95,6 +95,22 @@ export default {
     ],
   }),
 
+  watch: {
+    classesInSchedule: function(newSched, oldSched) {
+      oldSched;
+      this.$cookies.set("classesInSchedule", JSON.stringify(newSched));
+    },
+  },
+
+  mounted: function() {
+    if (this.$cookies.isKey("classesInSchedule")) {
+      this.classesInSchedule = JSON.parse(
+        this.$cookies.get("classesInSchedule")
+      );
+      console.log("Mounted: ", this.classesInSchedule);
+    }
+  },
+
   methods: {
     handleAddToScheduleRequest: function(classObj) {
       if (!this.classesInSchedule.includes(classObj)) {
