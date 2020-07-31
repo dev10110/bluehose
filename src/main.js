@@ -1,10 +1,13 @@
 import Vue from "vue";
 import App from "./App.vue";
 import vuetify from "./plugins/vuetify";
-import VuePapaParse from "vue-papa-parse";
 import VueCookies from "vue-cookies";
+import VueGtag from "vue-gtag";
 
-Vue.use(VuePapaParse);
+Vue.use(VueGtag, {
+  config: { id: "UA-154374275-3" },
+});
+
 Vue.config.productionTip = false;
 
 Vue.use(VueCookies);
