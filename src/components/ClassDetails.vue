@@ -2,7 +2,7 @@
   <div>
     <v-card>
       <v-card-title>
-        {{ selectedClass.CatalogNbr }} - {{ selectedClass.CourseTitle }}
+        {{ selectedClass.SubjectCatalog }} - {{ selectedClass.CourseTitle }}
         <v-spacer></v-spacer>
         <v-btn icon v-on:click="handleCloseCard"
           ><v-icon>mdi-close</v-icon></v-btn

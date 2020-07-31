@@ -44,6 +44,7 @@
       </v-container>
 
       <v-data-table
+        dense
         :headers="headers"
         :items="filtData"
         :search="search"
@@ -66,6 +67,15 @@
 //import vuePapaParse from "vue-papa-parse";
 
 import dataTable from "../data/FA2020_open.json";
+
+var regExp = /\(([^)]+)\)/;
+
+dataTable.forEach((classItem) => {
+  var matches = regExp.exec(classItem.Subject);
+  classItem.SubjectShort = matches[1];
+  classItem.SubjectCatalog =
+    classItem.SubjectShort + " " + classItem.CatalogNbr;
+});
 
 const uniqueAcadGroups = [...new Set(dataTable.map((obj) => obj.AcadGroup))];
 
@@ -98,6 +108,13 @@ export default {
     handleClickRow: function(event) {
       console.log(event);
       this.$emit("changeSelectedClass", event);
+
+      const filtA = this.dataTable.filter(function(item) {
+        return item.SubjectCatalog == event.SubjectCatalog;
+      });
+      if (filtA.length > 1) {
+        this.search = event.SubjectCatalog;
+      }
     },
   },
 
@@ -117,8 +134,8 @@ export default {
       search: "",
 
       headers: [
-        { text: "Class Number", value: "ClassNbr", align: "center" },
-        { text: "Catalog Number", value: "CatalogNbr", align: "center" },
+        { text: "Code", value: "SubjectCatalog", align: "center" },
+
         {
           text: "Course Title",
           align: "start",

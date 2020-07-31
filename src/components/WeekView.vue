@@ -52,7 +52,7 @@ export default {
     end: 0,
 
     mode: "stack",
-    weekday: [0, 1, 2, 3, 4, 5, 6],
+    weekday: [1, 2, 3, 4, 5],
     weekdays: [
       { text: "Sun - Sat", value: [0, 1, 2, 3, 4, 5, 6] },
       { text: "Mon - Sun", value: [1, 2, 3, 4, 5, 6, 0] },
@@ -101,7 +101,7 @@ export default {
       const min = new Date(`${start.date}T00:00:00`);
       // const max = new Date(`${end.date}T23:59:59`);
 
-      this.classesInSchedule.forEach((classItem) => {
+      this.classesInSchedule.forEach((classItem, classIndex) => {
         // determine which days the class is running:
         let days = [];
 
@@ -136,15 +136,61 @@ export default {
           // set to the right day
           startTime.setDate(startTime.getDate() + day - startTime.getDay());
 
-          startTime.setHours(9);
+          // determine the AM-PM
+          var AM = classItem.Time.slice(-2) == "AM";
+          // pop and split
+          var time = classItem.Time.slice(0, -2).split("-");
 
-          const endTime = new Date(startTime.getTime() + 1 * 3600 * 1000);
+          let startHour = 0;
+          let startMin = 0;
+          let endHour = 0;
+          let endMin = 0;
+
+          if (time[0].slice(-2) === "30") {
+            // start is half hour
+            startHour = parseInt(time[0].slice(0, -2));
+            startMin = 30;
+          } else {
+            startHour = parseInt(time[0]);
+            startMin = 0;
+          }
+
+          if (time[1].slice(-2) === "30") {
+            // end is half hour
+            endHour = parseInt(time[1].slice(0, -2));
+            endMin = 30;
+          } else {
+            endHour = parseInt(time[1]);
+            endMin = 0;
+          }
+
+          if (endHour !== 12) {
+            if (!AM) {
+              // ie PM
+              if (endHour >= startHour) {
+                // eg. 1-4pm
+                startHour = startHour += 12;
+              } else {
+                // eg 11-2pm
+              }
+              endHour = endHour += 12;
+            }
+          }
+
+          // assign to time
+          startTime.setHours(startHour, startMin);
+
+          const endTime = new Date(startTime.getTime());
+          endTime.setHours(endHour, endMin);
+
+          console.log("Start time: ", startTime, "End time: ", endTime);
+
           const event = {
-            name: "TEST EVENT",
+            name: classItem.SubjectCatalog,
             start: startTime,
             end: endTime,
             timed: true,
-            color: this.colors[0],
+            color: this.colors[classIndex % this.colors.length],
           };
 
           events.push(event);
