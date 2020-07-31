@@ -42,7 +42,7 @@
       </div>
       <div class="botBar">
         <v-container>
-          <v-row>
+          <v-row align="center">
             <v-col>
               Devansh Agrawal
             </v-col>
@@ -58,6 +58,9 @@
               </a>
             </v-col>
             <v-col>
+              <PrivacyPolicy />
+            </v-col>
+            <v-col>
               Last Updated: 31 July 2020
             </v-col>
           </v-row>
@@ -71,6 +74,7 @@
 import WeekView from "./components/WeekView";
 import ClassSelector from "./components/ClassSelector";
 import SelectedClasses from "./components/SelectedClasses";
+import PrivacyPolicy from "./components/PrivacyPolicy";
 
 export default {
   name: "App",
@@ -79,6 +83,7 @@ export default {
     WeekView,
     ClassSelector,
     SelectedClasses,
+    PrivacyPolicy,
   },
 
   data: () => ({
