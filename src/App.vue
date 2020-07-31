@@ -134,9 +134,9 @@ a:active {
   color: #fff;
 }
 .botBar a:link,
-a:visited,
-a:hover,
-a:active {
+.botBar a:visited,
+.botBar a:hover,
+.botBar a:active {
   color: #fff;
 }
 </style>
