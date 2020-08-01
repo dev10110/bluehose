@@ -2,13 +2,17 @@
 
 Bluehose is my attempt at making something like Firehose, but for UMich.
 
+bluehose.netlify.app
+[![Netlify Status](https://api.netlify.com/api/v1/badges/72de7171-2f59-465f-85e4-dd490ccd65bc/deploy-status)](https://app.netlify.com/sites/bluehose/deploys)
+
 The code is probably terrible - its my first Vue.js project, and basically my first javascript project too!
+
+## Bugs/Feature Request
 If you have any suggestions, features or bugs, _please_ let me know by raising an issue in the Github project, or by contacting me!
 
 devansh@umich.edu
 
-Deployed on Netlify
-[![Netlify Status](https://api.netlify.com/api/v1/badges/72de7171-2f59-465f-85e4-dd490ccd65bc/deploy-status)](https://app.netlify.com/sites/bluehose/deploys)
+
 
 ## Project setup
 
@@ -26,12 +30,6 @@ npm run serve
 
 ```
 npm run build
-```
-
-### Lints and fixes files
-
-```
-npm run lint
 ```
 
 ### Customize configuration
