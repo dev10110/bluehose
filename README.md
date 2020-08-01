@@ -2,7 +2,7 @@
 
 Bluehose is my attempt at making something like Firehose, but for UMich.
 
-bluehose.netlify.app
+[bluehose.netlify.app](bluehose.netlify.app)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/72de7171-2f59-465f-85e4-dd490ccd65bc/deploy-status)](https://app.netlify.com/sites/bluehose/deploys)
 
 The code is probably terrible - its my first Vue.js project, and basically my first javascript project too!
